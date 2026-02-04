@@ -101,12 +101,36 @@ section h3 {
 .participants-list li {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   padding: 6px 8px;
   background-color: #ffffff;
   border: 1px solid #eef2ff;
   border-radius: 6px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+/* group avatar and email to the left */
+.participant-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Delete button (unregister) */
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.participant-delete:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* Small avatar showing first letter of the email */
